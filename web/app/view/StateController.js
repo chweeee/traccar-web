@@ -81,15 +81,18 @@ Ext.define('Traccar.view.StateController', {
     keys: (function () {
         var i, list, result;
         result = {};
-        list = ['fixTime', 'latitude', 'longitude', 'valid', 'accuracy', 'altitude', 'speed', 'course', 'address', 'protocol'];
+        //list = ['fixTime', 'latitude', 'longitude', 'valid', 'accuracy', 'altitude', 'speed', 'course', 'address', 'protocol'];
+        list = ['fixTime', 'latitude', 'longitude', 'address'];
         for (i = 0; i < list.length; i++) {
             result[list[i]] = {
                 priority: i,
+                index: 'position' + list[i].replace(/^\w/g, function (s) { return s.toUpperCase();}),
                 name: Strings['position' + list[i].replace(/^\w/g, function (s) {
                     return s.toUpperCase();
                 })]
             };
         }
+        console.log(result);
         return result;
     })(),
 

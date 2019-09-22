@@ -25,11 +25,11 @@ Ext.define('Traccar.store.DeviceStatuses', {
         color: 'view-color-green'
     }, {
         id: 'offline',
-        name: 'Inactive',
+        name: 'Unknown',
         color: 'view-color-red'
     }, {
         id: 'unknown',
-        name: 'Offline',
+        name: 'Inactive',
         color: 'view-color-yellow'
     }]
 });
