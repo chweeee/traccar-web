@@ -13,7 +13,13 @@
 }
 
 .toolbar-header-style {
-    background-color: #5fa2dd !important;
+    background-color: #00ab4e !important;
+}
+
+.x-panel-header-default {
+    background-image: none;
+    background-color: #00ab4e !important;
+    border: 1px solid #FFFFFF !important;
 }
 
 body.x-border-layout-ct, div.x-border-layout-ct {
