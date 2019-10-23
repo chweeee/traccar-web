@@ -567,6 +567,61 @@ Ext.define('Traccar.view.ReportController', {
         renderer: Traccar.AttributeFormatter.getFormatter('spentFuel')
     }],
 
+//    tripsColumns: [{
+//        text: Strings.reportDeviceName,
+//        dataIndex: 'deviceId',
+//        renderer: Traccar.AttributeFormatter.getFormatter('deviceId')
+//    }, {
+//        text: Strings.reportStartTime,
+//        dataIndex: 'startTime',
+//        xtype: 'datecolumn',
+//        renderer: Traccar.AttributeFormatter.getFormatter('startTime')
+//    }, {
+//        text: Strings.reportStartOdometer,
+//        dataIndex: 'startOdometer',
+//        renderer: Traccar.AttributeFormatter.getFormatter('distance')
+//    }, {
+//        text: Strings.reportStartAddress,
+//        dataIndex: 'startAddress',
+//        renderer: Traccar.AttributeFormatter.getFormatter('address')
+//    }, {
+//        text: Strings.reportEndTime,
+//        dataIndex: 'endTime',
+//        xtype: 'datecolumn',
+//        renderer: Traccar.AttributeFormatter.getFormatter('endTime')
+//    }, {
+//        text: Strings.reportEndOdometer,
+//        dataIndex: 'endOdometer',
+//        renderer: Traccar.AttributeFormatter.getFormatter('distance')
+//    }, {
+//        text: Strings.reportEndAddress,
+//        dataIndex: 'endAddress',
+//        renderer: Traccar.AttributeFormatter.getFormatter('address')
+//    }, {
+//        text: Strings.sharedDistance,
+//        dataIndex: 'distance',
+//        renderer: Traccar.AttributeFormatter.getFormatter('distance')
+//    }, {
+//        text: Strings.reportAverageSpeed,
+//        dataIndex: 'averageSpeed',
+//        renderer: Traccar.AttributeFormatter.getFormatter('speed')
+//    }, {
+//        text: Strings.reportMaximumSpeed,
+//        dataIndex: 'maxSpeed',
+//        renderer: Traccar.AttributeFormatter.getFormatter('speed')
+//    }, {
+//        text: Strings.reportDuration,
+//        dataIndex: 'duration',
+//        renderer: Traccar.AttributeFormatter.getFormatter('duration')
+//    }, {
+//        text: Strings.reportSpentFuel,
+//        dataIndex: 'spentFuel',
+//        renderer: Traccar.AttributeFormatter.getFormatter('spentFuel')
+//    }, {
+//        text: Strings.sharedDriver,
+//        dataIndex: 'driverUniqueId',
+//        renderer: Traccar.AttributeFormatter.getFormatter('driverUniqueId')
+//    }],
     tripsColumns: [{
         text: Strings.reportDeviceName,
         dataIndex: 'deviceId',
@@ -577,10 +632,6 @@ Ext.define('Traccar.view.ReportController', {
         xtype: 'datecolumn',
         renderer: Traccar.AttributeFormatter.getFormatter('startTime')
     }, {
-        text: Strings.reportStartOdometer,
-        dataIndex: 'startOdometer',
-        renderer: Traccar.AttributeFormatter.getFormatter('distance')
-    }, {
         text: Strings.reportStartAddress,
         dataIndex: 'startAddress',
         renderer: Traccar.AttributeFormatter.getFormatter('address')
@@ -590,10 +641,6 @@ Ext.define('Traccar.view.ReportController', {
         xtype: 'datecolumn',
         renderer: Traccar.AttributeFormatter.getFormatter('endTime')
     }, {
-        text: Strings.reportEndOdometer,
-        dataIndex: 'endOdometer',
-        renderer: Traccar.AttributeFormatter.getFormatter('distance')
-    }, {
         text: Strings.reportEndAddress,
         dataIndex: 'endAddress',
         renderer: Traccar.AttributeFormatter.getFormatter('address')
@@ -602,25 +649,9 @@ Ext.define('Traccar.view.ReportController', {
         dataIndex: 'distance',
         renderer: Traccar.AttributeFormatter.getFormatter('distance')
     }, {
-        text: Strings.reportAverageSpeed,
-        dataIndex: 'averageSpeed',
-        renderer: Traccar.AttributeFormatter.getFormatter('speed')
-    }, {
-        text: Strings.reportMaximumSpeed,
-        dataIndex: 'maxSpeed',
-        renderer: Traccar.AttributeFormatter.getFormatter('speed')
-    }, {
         text: Strings.reportDuration,
         dataIndex: 'duration',
         renderer: Traccar.AttributeFormatter.getFormatter('duration')
-    }, {
-        text: Strings.reportSpentFuel,
-        dataIndex: 'spentFuel',
-        renderer: Traccar.AttributeFormatter.getFormatter('spentFuel')
-    }, {
-        text: Strings.sharedDriver,
-        dataIndex: 'driverUniqueId',
-        renderer: Traccar.AttributeFormatter.getFormatter('driverUniqueId')
     }],
 
     stopsColumns: [{
